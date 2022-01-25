@@ -62,8 +62,8 @@ int main(int, char**)
         cout<<"sth is not yes\n";
         return 1;
     }
-    VideoWriter out("videoOut/out2.mp4",VideoWriter::fourcc(vd.fourcc[0],vd.fourcc[1],vd.fourcc[2],vd.fourcc[3]),vd.fps,Size(vd.x,vd.y),vd.isColor);
-    VideoWriter kr("videoOut/kreski2.mp4",VideoWriter::fourcc(vd.fourcc[0],vd.fourcc[1],vd.fourcc[2],vd.fourcc[3]),vd.fps,Size(vd.x,vd.y),0);
+    VideoWriter out("videoOut/out.mp4",VideoWriter::fourcc(vd.fourcc[0],vd.fourcc[1],vd.fourcc[2],vd.fourcc[3]),vd.fps,Size(vd.x,vd.y),vd.isColor);
+    VideoWriter kr("videoOut/lines.mp4",VideoWriter::fourcc(vd.fourcc[0],vd.fourcc[1],vd.fourcc[2],vd.fourcc[3]),vd.fps,Size(vd.x,vd.y),0);
     for(int i=0;i<vd.frames;i++)
     {
         Mat tmp;
